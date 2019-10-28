@@ -82,7 +82,7 @@ public class ProductPersistenceServiceImpl implements ProductPersistenceService
 	}
 
 	@Override
-	public List<Product> retrueveByCategory(int category) throws SQLException, DAOException
+	public List<Product> retrieveByCategory(int category) throws SQLException, DAOException
 	{
 		em.getTransaction().begin();
 		List<Product> prod = (List<Product>)em.createQuery("== prod")
